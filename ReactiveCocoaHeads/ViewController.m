@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "ReactiveCocoa/ReactiveCocoa.h"
 
+#import "SignInService.h"
+
 @interface ViewController ()
 
 @end
@@ -70,6 +72,31 @@
                       }];
   
   RAC(self.submitButton, enabled) = formValidSignal;
+  
+  [[[self.submitButton rac_signalForControlEvents:UIControlEventTouchUpInside]
+   flattenMap:^id(id value) {
+     return [self _signInSignal];
+   }]
+   subscribeNext:^(NSNumber *signInSuccess) {
+     if (signInSuccess.boolValue) {
+       [self performSegueWithIdentifier:@"SignInSegue"
+                                 sender:self];
+     }
+   }];
+}
+
+- (RACSignal *)_signInSignal {
+  SignInService *signInService = [[SignInService alloc] init];
+  return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+    [signInService signInWithLogin:self.loginTextField.text
+                          password:self.passwordTextField.text
+                         completed:^(BOOL success) {
+                           [subscriber sendNext:@(success)];
+                           [subscriber sendCompleted];
+                         }];
+    
+    return nil;
+  }];
 }
 
 @end

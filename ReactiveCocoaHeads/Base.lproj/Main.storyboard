@@ -119,12 +119,12 @@
                     <navigationItem key="navigationItem" id="moD-IH-9cR"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="MV7-Ib-g7q" kind="show" identifier="SignInSegue" id="nmz-EW-eRR"/>
                         <outlet property="loginLabel" destination="OLy-58-HM5" id="gPA-Od-CJX"/>
                         <outlet property="loginTextField" destination="gTU-ep-vU4" id="5QX-mV-2aj"/>
                         <outlet property="passwordLabel" destination="dUr-X7-Yp7" id="WH5-az-pOd"/>
                         <outlet property="passwordTextField" destination="Rqt-sz-pCv" id="JT5-IO-eHS"/>
                         <outlet property="submitButton" destination="WjC-xv-rKp" id="eIz-Za-cqZ"/>
+                        <segue destination="MV7-Ib-g7q" kind="show" identifier="SignInSegue" id="nmz-EW-eRR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
