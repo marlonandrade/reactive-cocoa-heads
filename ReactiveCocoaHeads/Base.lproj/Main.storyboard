@@ -74,7 +74,6 @@
                                         <state key="normal" title="Submit"/>
                                         <connections>
                                             <action selector="submitTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VOO-RN-SCy"/>
-                                            <segue destination="MV7-Ib-g7q" kind="show" id="t9x-Yz-qg8"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -129,12 +128,12 @@
                     <navigationItem key="navigationItem" id="moD-IH-9cR"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="MV7-Ib-g7q" kind="show" identifier="SignInSegue" id="nmz-EW-eRR"/>
                         <outlet property="loginLabel" destination="OLy-58-HM5" id="I2J-L5-hnb"/>
                         <outlet property="loginTextField" destination="gTU-ep-vU4" id="s0b-eC-8zn"/>
                         <outlet property="passwordLabel" destination="dUr-X7-Yp7" id="TMB-bt-5EL"/>
                         <outlet property="passwordTextField" destination="Rqt-sz-pCv" id="yi8-Zh-SLR"/>
                         <outlet property="submitButton" destination="WjC-xv-rKp" id="DCv-PJ-av9"/>
+                        <segue destination="MV7-Ib-g7q" kind="show" identifier="SignInSegue" id="nmz-EW-eRR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

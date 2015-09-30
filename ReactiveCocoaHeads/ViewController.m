@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "SignInService.h"
+
 @interface ViewController ()
 
 @end
@@ -81,6 +83,16 @@
   NSLog(@"%@ - %@",
         self.loginTextField.text,
         self.passwordTextField.text);
+  
+  SignInService *signInService = [[SignInService alloc] init];
+  [signInService signInWithLogin:self.loginTextField.text
+                        password:self.passwordTextField.text
+                       completed:^(BOOL success) {
+                         if (success) {
+                           [self performSegueWithIdentifier:@"SignInSegue"
+                                                     sender:self];
+                         }
+                       }];
 }
 
 @end
