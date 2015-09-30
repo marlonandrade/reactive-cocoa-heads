@@ -47,6 +47,9 @@
                                         <rect key="frame" x="8" y="30" width="232" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="loginEditing:" destination="BYZ-38-t0r" eventType="editingChanged" id="rp7-XQ-UBy"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUr-X7-Yp7">
                                         <rect key="frame" x="8" y="68" width="66" height="20.5"/>
@@ -58,6 +61,9 @@
                                         <rect key="frame" x="8" y="90" width="232" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="passwordEditing:" destination="BYZ-38-t0r" eventType="editingChanged" id="fhk-Zk-U8z"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WjC-xv-rKp">
                                         <rect key="frame" x="8" y="128" width="232" height="30"/>
@@ -66,6 +72,10 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                         <state key="normal" title="Submit"/>
+                                        <connections>
+                                            <action selector="submitTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VOO-RN-SCy"/>
+                                            <segue destination="MV7-Ib-g7q" kind="show" id="t9x-Yz-qg8"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -120,6 +130,11 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <segue destination="MV7-Ib-g7q" kind="show" identifier="SignInSegue" id="nmz-EW-eRR"/>
+                        <outlet property="loginLabel" destination="OLy-58-HM5" id="I2J-L5-hnb"/>
+                        <outlet property="loginTextField" destination="gTU-ep-vU4" id="s0b-eC-8zn"/>
+                        <outlet property="passwordLabel" destination="dUr-X7-Yp7" id="TMB-bt-5EL"/>
+                        <outlet property="passwordTextField" destination="Rqt-sz-pCv" id="yi8-Zh-SLR"/>
+                        <outlet property="submitButton" destination="WjC-xv-rKp" id="DCv-PJ-av9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
