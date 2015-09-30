@@ -14,6 +14,7 @@
 		BF3E09641BBC10C40006CB45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3E09621BBC10C40006CB45 /* Main.storyboard */; };
 		BF3E09661BBC10C40006CB45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3E09651BBC10C40006CB45 /* Assets.xcassets */; };
 		BF3E09691BBC10C40006CB45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3E09671BBC10C40006CB45 /* LaunchScreen.storyboard */; };
+		BF3E09721BBC220A0006CB45 /* SignInService.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3E09711BBC220A0006CB45 /* SignInService.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		BF3E09651BBC10C40006CB45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF3E09681BBC10C40006CB45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF3E096A1BBC10C40006CB45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF3E09701BBC220A0006CB45 /* SignInService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInService.h; sourceTree = "<group>"; };
+		BF3E09711BBC220A0006CB45 /* SignInService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInService.m; sourceTree = "<group>"; };
 		DCF0DFE5BEF0541A1CAC988C /* Pods-ReactiveCocoaHeads.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveCocoaHeads.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveCocoaHeads/Pods-ReactiveCocoaHeads.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +94,8 @@
 				BF3E09671BBC10C40006CB45 /* LaunchScreen.storyboard */,
 				BF3E096A1BBC10C40006CB45 /* Info.plist */,
 				BF3E09591BBC10C40006CB45 /* Supporting Files */,
+				BF3E09701BBC220A0006CB45 /* SignInService.h */,
+				BF3E09711BBC220A0006CB45 /* SignInService.m */,
 			);
 			path = ReactiveCocoaHeads;
 			sourceTree = "<group>";
@@ -227,6 +232,7 @@
 				BF3E09611BBC10C40006CB45 /* ViewController.m in Sources */,
 				BF3E095E1BBC10C40006CB45 /* AppDelegate.m in Sources */,
 				BF3E095B1BBC10C40006CB45 /* main.m in Sources */,
+				BF3E09721BBC220A0006CB45 /* SignInService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -66,9 +66,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                         <state key="normal" title="Submit"/>
-                                        <connections>
-                                            <segue destination="MV7-Ib-g7q" kind="show" id="5Pa-aQ-9P3"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -121,6 +118,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="moD-IH-9cR"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="MV7-Ib-g7q" kind="show" identifier="SignInSegue" id="nmz-EW-eRR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -139,7 +139,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bem vindo!!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbD-If-UN9">
-                                <rect key="frame" x="106" y="272.5" width="108" height="23.5"/>
+                                <rect key="frame" x="106" y="272" width="108" height="23.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
